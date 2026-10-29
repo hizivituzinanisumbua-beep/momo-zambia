@@ -166,6 +166,24 @@
     @media (max-height: 750px) {
       .bottom { margin-top: 15px; }
     }
+
+    /* New styles for the "How to paste" link below the textarea */
+    .how-to-paste-wrap {
+      text-align: right;
+      margin-top: 6px;
+      padding-right: 4px;
+    }
+    .how-to-paste-link {
+      font-size: 13px;
+      color: #004c69;
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .how-to-paste-link:hover {
+      color: #003349;
+    }
   </style>
 </head>
 <body>
@@ -202,6 +220,11 @@
 
     <div class="message-area">
       <textarea id="smsMessage" placeholder="Paste the whole SMS message here..."></textarea>
+    </div>
+
+    <!-- NEW: "How to paste" link below the textarea -->
+    <div class="how-to-paste-wrap">
+      <a href="copy.html" class="how-to-paste-link">How to paste</a>
     </div>
 
     <div class="resend-wrap" id="resendWrap">
